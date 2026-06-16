@@ -1,0 +1,317 @@
+/* Elden Ring Theme */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: linear-gradient(
+        to bottom,
+        #0a0a0a,
+        #111111,
+        #1a1a1a
+    );
+    color: #e8d9a8;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+/* Main Sections */
+
+div {
+    background: rgba(20, 20, 20, 0.9);
+    border: 2px solid #8f7a3e;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+
+    box-shadow:
+        0 0 10px rgba(255, 215, 0, 0.15),
+        inset 0 0 15px rgba(255, 215, 0, 0.05);
+}
+
+/* Headings */
+
+h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+
+    color: #d4af37;
+
+    text-shadow:
+        0 0 8px rgba(255, 215, 0, 0.6),
+        0 0 20px rgba(255, 215, 0, 0.3);
+
+    border-bottom: 1px solid #8f7a3e;
+    padding-bottom: 10px;
+}
+
+/* Lists */
+
+ul,
+ol {
+    padding-left: 30px;
+}
+
+li {
+    margin: 12px 0;
+    font-size: 1.05rem;
+}
+
+/* Links */
+
+a {
+    color: #f5d76e;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+a:hover {
+    color: #fff4c2;
+
+    text-shadow:
+        0 0 10px gold,
+        0 0 20px gold;
+
+    padding-left: 6px;
+}
+
+/* Numbered list styling */
+
+ol li::marker {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+/* Bullet list styling */
+
+ul li::marker {
+    color: #d4af37;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8f7a3e;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d4af37;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.85),
+            rgba(0,0,0,.9)
+        ),
+        url("/images/erdtree.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: #e8d9a8;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #d4af37;
+    letter-spacing: 5px;
+
+    text-shadow:
+        0 0 15px gold,
+        0 0 35px rgba(255,215,0,.5);
+}
+
+header p {
+    color: #c9b77a;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* table css */
+/* ==========================
+   ELDEN RING TABLE THEME
+   ========================== */
+
+.table-responsive {
+    overflow-x: auto;
+    margin: 30px 0;
+    border-radius: 12px;
+}
+
+/* Main Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(15, 15, 15, 0.95);
+
+    border: 2px solid #8f7a3e;
+
+    box-shadow:
+        0 0 15px rgba(255, 215, 0, 0.15),
+        inset 0 0 20px rgba(255, 215, 0, 0.05);
+}
+
+/* Header */
+
+thead th,
+th {
+    background: linear-gradient(
+        to bottom,
+        #4a3d1f,
+        #2b2412
+    );
+
+    color: #f7d774;
+
+    padding: 15px;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    border: 1px solid #8f7a3e;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    text-shadow:
+        0 0 5px rgba(255, 215, 0, 0.7);
+}
+
+/* Cells */
+
+td {
+    padding: 14px;
+    border: 1px solid rgba(143, 122, 62, 0.5);
+
+    vertical-align: top;
+
+    color: #e6d8b0;
+
+    line-height: 1.6;
+}
+
+/* Alternating Rows */
+
+tr:nth-child(even) {
+    background: rgba(35, 35, 35, 0.9);
+}
+
+tr:nth-child(odd) {
+    background: rgba(20, 20, 20, 0.9);
+}
+
+/* Hover Effect */
+
+tr:hover {
+    background: rgba(70, 60, 20, 0.8);
+
+    box-shadow:
+        inset 0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+/* Lists inside table */
+
+td ul,
+td ol {
+    padding-left: 20px;
+}
+
+td li {
+    margin-bottom: 8px;
+}
+
+/* Links */
+
+td a {
+    color: #f7d774;
+    text-decoration: none;
+    transition: .3s;
+}
+
+td a:hover {
+    color: white;
+
+    text-shadow:
+        0 0 10px gold,
+        0 0 20px gold;
+}
+
+/* Quest Giver Column */
+
+td:first-child {
+    font-weight: bold;
+    text-align: center;
+    min-width: 140px;
+
+    color: #ffd86b;
+}
+
+/* Reward Column */
+
+td:nth-child(3) {
+    color: #9ff0a7;
+}
+
+/* Lockout Column */
+
+td:last-child {
+    color: #ffb0b0;
+}
+
+/* Scrollbar */
+
+.table-responsive::-webkit-scrollbar {
+    height: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #111;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #8f7a3e;
+    border-radius: 10px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    table {
+        min-width: 1200px;
+    }
+
+    td,
+    th {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
